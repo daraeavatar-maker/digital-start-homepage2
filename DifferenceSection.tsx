@@ -5,7 +5,7 @@
 
 import { motion } from "motion/react";
 import { Smile, Award, Zap, BookOpenCheck, Target } from "lucide-react";
-import { DifferenceCard } from "../types";
+import { DifferenceCard } from "./types";
 
 export default function DifferenceSection() {
   const customDifferences: DifferenceCard[] = [

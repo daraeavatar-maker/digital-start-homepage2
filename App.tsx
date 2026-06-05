@@ -3,19 +3,19 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import Navigation from "./components/Navigation";
-import HeroSection from "./components/HeroSection";
-import InteractiveShowcase from "./components/InteractiveShowcase";
-import ProblemSection from "./components/ProblemSection";
-import BeforeAfterSection from "./components/BeforeAfterSection";
-import SolutionSection from "./components/SolutionSection";
-import DifferenceSection from "./components/DifferenceSection";
-import CoursesSection from "./components/CoursesSection";
-import ProcessSection from "./components/ProcessSection";
-import ReviewsSection from "./components/ReviewsSection";
-import ConsultingForm from "./components/ConsultingForm";
-import FloatingButton from "./components/FloatingButton";
-import Footer from "./components/Footer";
+import Navigation from "./Navigation";
+import HeroSection from "./HeroSection";
+import InteractiveShowcase from "./InteractiveShowcase";
+import ProblemSection from "./ProblemSection";
+import BeforeAfterSection from "./BeforeAfterSection";
+import SolutionSection from "./SolutionSection";
+import DifferenceSection from "./DifferenceSection";
+import CoursesSection from "./CoursesSection";
+import ProcessSection from "./ProcessSection";
+import ReviewsSection from "./ReviewsSection";
+import ConsultingForm from "./ConsultingForm";
+import FloatingButton from "./FloatingButton";
+import Footer from "./Footer";
 
 export default function App() {
   return (

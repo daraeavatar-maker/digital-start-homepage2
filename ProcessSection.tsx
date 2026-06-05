@@ -5,7 +5,7 @@
 
 import { motion } from "motion/react";
 import { UserCheck, SearchCode, Milestone, Focus, Keyboard } from "lucide-react";
-import { StepItem } from "../types";
+import { StepItem } from "./types";
 
 export default function ProcessSection() {
   const steps: StepItem[] = [
