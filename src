@@ -1,0 +1,181 @@
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+import Navigation from "./components/Navigation";
+import HeroSection from "./components/HeroSection";
+import InteractiveShowcase from "./components/InteractiveShowcase";
+import ProblemSection from "./components/ProblemSection";
+import BeforeAfterSection from "./components/BeforeAfterSection";
+import SolutionSection from "./components/SolutionSection";
+import DifferenceSection from "./components/DifferenceSection";
+import CoursesSection from "./components/CoursesSection";
+import ProcessSection from "./components/ProcessSection";
+import ReviewsSection from "./components/ReviewsSection";
+import ConsultingForm from "./components/ConsultingForm";
+import FloatingButton from "./components/FloatingButton";
+import Footer from "./components/Footer";
+
+export default function App() {
+  return (
+    <div className="relative min-h-screen bg-brand-ivory text-brand-text antialiased selection:bg-brand-deep/10 selection:text-brand-deep">
+      {/* 1. Header Navigation */}
+      <Navigation />
+
+      {/* Main Sections */}
+      <main>
+        {/* 2. Hero Section */}
+        <HeroSection />
+
+        {/* 2.5 Dynamic Interactive Dashboard Showcase (Pinterest Style) */}
+        <InteractiveShowcase />
+
+        {/* 3. Problem Sympathy Section */}
+        <ProblemSection />
+
+        {/* 4. Before/After Transformation Section */}
+        <BeforeAfterSection />
+
+        {/* 5. Real Solution Section */}
+        <SolutionSection />
+
+        {/* 6. Distinct Differentiation Section */}
+        <DifferenceSection />
+
+        {/* 7. Courses and Deep Curriculum */}
+        <CoursesSection />
+
+        {/* 8. Timeline Stepper Process */}
+        <ProcessSection />
+
+        {/* 9. Success Reviews Section */}
+        <ReviewsSection />
+
+        {/* 10. Direct Registration Forms */}
+        <ConsultingForm />
+      </main>
+
+      {/* 11. Float Action and Fixed Bar Trigger */}
+      <FloatingButton />
+
+      {/* 12. Corporate Footnotes */}
+      <Footer />
+    </div>
+  );
+}
+
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Pretendard", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  --font-serif: "Playfair Display", Georgia, "Times New Roman", "ChosunCentennial", "Nanum Myeongjo", serif;
+  
+  --color-brand-ivory: #F3F7FC;
+  --color-brand-cream: #FFFFFF;
+  --color-brand-deep: #113264;
+  --color-brand-deep-hover: #0B2144;
+  --color-brand-beige: #D5E5F2;
+  --color-brand-beige-hover: #BAD5EB;
+  --color-brand-beige-dark: #2FA1D5;
+  --color-brand-gold: #0DA1B9;
+  --color-brand-gold-light: #E1F2F5;
+  --color-brand-text: #17253D;
+  --color-brand-muted: #576A85;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-brand-ivory);
+  color: var(--color-brand-text);
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar to match the design */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-brand-ivory);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-brand-deep);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brand-gold);
+}
+
+import {StrictMode} from 'react';
+import {createRoot} from 'react-dom/client';
+import App from './App.tsx';
+import './index.css';
+
+createRoot(document.getElementById('root')!).render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
+);
+
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+export interface ConsultingFormData {
+  name: string;
+  phone: string;
+  businessField: string;
+  worries: string;
+  desiredCourse: string;
+}
+
+export interface ProblemCard {
+  id: number;
+  text: string;
+  emoji: string;
+}
+
+export interface SolutionPoint {
+  id: number;
+  title: string;
+  description: string;
+  iconName: string;
+}
+
+export interface CourseCard {
+  id: number;
+  title: string;
+  description: string;
+  tags: string[];
+  details: string[];
+  iconName: string;
+}
+
+export interface StepItem {
+  id: number;
+  step: string;
+  title: string;
+  description: string;
+}
+
+export interface DifferenceCard {
+  id: number;
+  title: string;
+  description: string;
+  iconName: string;
+}
+
+export interface ReviewCard {
+  id: number;
+  quote: string;
+  author: string;
+  business: string;
+  badge: string;
+  rating: number;
+}
