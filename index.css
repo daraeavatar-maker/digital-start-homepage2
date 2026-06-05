@@ -1,0 +1,45 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Pretendard", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  --font-serif: "Playfair Display", Georgia, "Times New Roman", "ChosunCentennial", "Nanum Myeongjo", serif;
+  
+  --color-brand-ivory: #F3F7FC;
+  --color-brand-cream: #FFFFFF;
+  --color-brand-deep: #113264;
+  --color-brand-deep-hover: #0B2144;
+  --color-brand-beige: #D5E5F2;
+  --color-brand-beige-hover: #BAD5EB;
+  --color-brand-beige-dark: #2FA1D5;
+  --color-brand-gold: #0DA1B9;
+  --color-brand-gold-light: #E1F2F5;
+  --color-brand-text: #17253D;
+  --color-brand-muted: #576A85;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-brand-ivory);
+  color: var(--color-brand-text);
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar to match the design */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-brand-ivory);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-brand-deep);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brand-gold);
+}
