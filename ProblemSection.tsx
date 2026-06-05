@@ -5,7 +5,7 @@
 
 import { motion } from "motion/react";
 import { HelpCircle, AlertCircle, Ban } from "lucide-react";
-import { ProblemCard } from "../types";
+import { ProblemCard } from "./types";
 
 export default function ProblemSection() {
   const problems: ProblemCard[] = [

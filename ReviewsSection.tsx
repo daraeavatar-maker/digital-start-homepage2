@@ -5,7 +5,7 @@
 
 import { motion } from "motion/react";
 import { Star, MessageSquareQuote, ChevronRight } from "lucide-react";
-import { ReviewCard } from "../types";
+import { ReviewCard } from "./types";
 
 export default function ReviewsSection() {
   const reviews: ReviewCard[] = [

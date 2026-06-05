@@ -6,7 +6,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Instagram, FileText, MapPin, Sparkles, X, Check, Eye, HelpCircle } from "lucide-react";
-import { CourseCard } from "../types";
+import { CourseCard } from "./types";
 
 export default function CoursesSection() {
   const [selectedCourse, setSelectedCourse] = useState<CourseCard | null>(null);

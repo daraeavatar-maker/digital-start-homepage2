@@ -6,7 +6,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Check, Phone, ShieldCheck, Mail, ClipboardCheck, Sparkles, Building2, User2 } from "lucide-react";
-import { ConsultingFormData } from "../types";
+import { ConsultingFormData } from "./types";
 
 // ==================== GOOGLE FORM CONFIGURATION ====================
 // 실전 파일 제출용 구글 설문지(Google Form) 주소를 입력해 주세요.
